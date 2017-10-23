@@ -22,8 +22,13 @@ a {
 	color: #fff;
 }
 
+
+
 a:hover {
-	opacity: 1;
+    opacity: 1;
+   
+    cursor: pointer;
+    
 }
 
 a.btn {
@@ -84,20 +89,23 @@ section p {
 /*Header Styles*/
 
 header {
-	position: absolute;
+	position: fixed;
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 35px 100px 0;
+    padding: 20px 100px ;
+   
 	animation: 1s fadein 0.5s forwards;
-	opacity: 0;
-	color: #fff;
+    opacity: 0;
+    z-index: 2;
+    background-color: #3f51b5
+
 }
 
 @keyframes fadein {
 	100% {
-		opacity: 1;
+		opacity: .9;
 	}
 }
 
@@ -141,8 +149,12 @@ header nav li {
 	height: 100%;
 	background-size: cover;
 	z-index: -1;
-	background-color: #80a3db;
+    background-color: #2504fc;
+ 
 }
+
+
+
 
 .hero h1 {
 	font: bold 60px "Open Sans", sans-serif;
@@ -308,7 +320,6 @@ footer p{
     text-transform: uppercase;
     opacity: .6;
     font-size:14px;
-    align-self: center;
 }
 
 @media (max-width:800px ){
@@ -316,22 +327,13 @@ footer p{
         flex-direction: column;
         align-items: center;
        
-    };
-    footer p{
+    }
+    footer p {
         margin :20px;
         text-align: center;
        
     }
     footer ul li{
       margin: 10px 8px;
-     }
+    }
 }
-
-
-
-
-
-
-
-
-
